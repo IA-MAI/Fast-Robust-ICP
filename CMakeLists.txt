@@ -13,14 +13,6 @@ if(OPENMP_FOUND)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 endif()
 
-#--- Eigen3
-find_package(Eigen3 REQUIRED)
-include_directories(${EIGEN3_INCLUDE_DIRS})
-
-#--- Nanoflann
-find_package(NanoFlann REQUIRED)
-include_directories(${NANOFLANN_INCLUDE_DIR})
-
 #--- Build example
 include_directories(.)
 file(GLOB SOURCES "*.cpp")

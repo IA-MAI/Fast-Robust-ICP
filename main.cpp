@@ -1,7 +1,7 @@
 #include <iostream>
-#include "ICP.h"
-#include "io_pc.h"
-#include "FRICP.h"
+#include "include/ICP.h"
+#include "include/io_pc.h"
+#include "include/FRICP.h"
 
 int main(int argc, char const ** argv)
 {
