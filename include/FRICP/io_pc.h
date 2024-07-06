@@ -380,6 +380,7 @@ bool read_file(MatrixType& vertices, MatrixType& normals, MatrixType& vert_color
     else
     {
         std::cout << "Can't read file " << filename << std::endl;
+        return false;
     }
 }
 
@@ -397,6 +398,7 @@ bool write_file(const std::string& prev_filename, const MatrixType& vertices, co
     else
     {
         std::cout << "Can't write to file "<< filename << std::endl;
+        return false;
     }
 }
 

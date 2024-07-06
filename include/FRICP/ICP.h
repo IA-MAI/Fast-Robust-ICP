@@ -16,14 +16,14 @@
 ///////////////////////////////////////////////////////////////////////////////
 #ifndef ICP_H
 #define ICP_H
-//#include <nanoflann.hpp>
+
 #include "include/nanoflann.hpp"
-#include <include/AndersonAcceleration.h>
+#include <include/FRICP/AndersonAcceleration.h>
 #include <time.h>
 #include <fstream>
 #include <algorithm>
-#include <include/median.h>
-#include <iostream>
+#include <include/FRICP/median.h>
+
 
 #define TUPLE_SCALE	  0.95
 #define TUPLE_MAX_CNT 1000
@@ -43,7 +43,6 @@ namespace nanoflann {
         KDTreeAdaptor(const MatrixType &mat, const int leaf_max_size = 10) : m_data_matrix(mat) {
             const size_t dims = mat.rows();
             index = new index_t(dims, *this, nanoflann::KDTreeSingleIndexAdaptorParams(leaf_max_size, dims));
-            //index = new index_t(dims, *this, nanoflann::KDTreeSingleIndexAdaptorParams(leaf_max_size));
             index->buildIndex();
         }
         ~KDTreeAdaptor() { delete index; }

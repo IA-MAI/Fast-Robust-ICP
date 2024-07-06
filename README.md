@@ -9,7 +9,7 @@ This code was written by Yuxin Yao. If you have questions, please contact yaoyux
 
 ## Compilation
 
-The code is compiled using [CMake](https://cmake.org/) and requires [Eigen](https://eigen.tuxfamily.org/). It has been tested on Ubuntu 24.04 with gcc 13.2.0 and on Windows with Visual Studio 2015. 
+The code is compiled using [CMake](https://cmake.org/). It has been tested on Ubuntu 24.04 with gcc 13.2.0 and it should work on Windows with Visual Studio 2015. 
 
 Follow the following steps to compile the code:
 
